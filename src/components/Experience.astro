@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Septiembre 2023 - Actualmente...",
+    title: "Principal Frontend Engineer",
+    company: "Tributo Simple",
+    description:
+      "Como líder del equipo de desarrollo, dirigí la creación y desarrollo de aplicaciones web utilizando Angular e Ionic. Gestioné el lanzamiento de una aplicación que ha superado las 120,000 descargas en App Store y Play Store, demostrando nuestra capacidad para desarrollar productos digitales de alta demanda y éxito en el mercado. Desarrollé y mantuve componentes y utilidades clave para la plataforma, e implementé medidas de integración continua y despliegue, mejorando significativamente el flujo de trabajo. Bajo mi liderazgo, se logró un aumento del 30% en la calidad de entrega del software y las mejoras implementadas contribuyeron a triplicar las ganancias de la empresa.",
+    link: "https://apps.apple.com/ar/app/tributo-simple-monotributo/id1571573160",
+  },
+  {
+    date: "Abril 2021 - Septiembre 2023",
+    title: "Principal Frontend Engineer",
+    company: "Kemis Software House",
+    description:
+      "Lideré la creación y desarrollo de aplicaciones web utilizando Vue y React. Desarrollé una calculadora de simulación de costos para materiales de construcción. Administré y proporcioné soporte técnico para el software contable y de facturación. Implementé herramientas de gestión de comunicación y trabajo en equipo. Las mejoras implementadas contribuyeron a un aumento del 20% en las ganancias de la empresa. Actualmente está en Endeavor como una de las 60 empresas que más crecen en Brasil. Ha otorgado más de 3,6 mil millones en créditos para construcciones en todo el país, cuenta con más de 5,000 constructores, fue reconocido a nivel nacional por Forbes Under 30.",
+      link: "https://www.minhacasafinanciada.com/",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
